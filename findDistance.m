@@ -8,6 +8,6 @@ function dist = findDistance(x, centroid)
 diff = x - centroid;
 
 % compute the distance squared
-dist = diff' * diff;
+dist = diff * diff';
 
 end
