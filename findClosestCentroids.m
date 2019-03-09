@@ -18,7 +18,7 @@ for i = 1:m
     % get the ith example
     x = X(i,:);
     % findClosest centroid and store it into idx
-    idx(i) = findClosestCentroid(x, centroids)
+    idx(i) = findClosestCentroid(x, centroids);
 endfor
 
 
