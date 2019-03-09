@@ -11,9 +11,10 @@ min_distance = Inf;
 
 % Loop over the centroids
 for k_index = 1:K
-    centroid = centroids(k_index);
+    centroid = centroids(k_index, :);
     dist = findDistance(x, centroid);
-    if (dist < min_dist)
+
+    if (dist < min_distance)
         k = k_index;
         min_distance = dist;
     endif
