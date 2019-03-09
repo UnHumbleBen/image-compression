@@ -1,4 +1,4 @@
-%% Intialization
+%% Initialization
 clear; close all; clc
 
 %% Find Close Centroids
@@ -21,3 +21,7 @@ fprintf('\n(the closest centroids should be in 1, 3, 2 respectively\n');
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
+
+%% Compute Means
+fprintf('\nComputing centroids means.\n\n');
+centroids = computeCentroids(X, idx, K);
