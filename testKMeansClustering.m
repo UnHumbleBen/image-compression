@@ -15,7 +15,7 @@ max_iters = 10;
 initial_centroids = [3 3; 6 2; 8 5];
 
 % Run K-means algorithm
-[centroids, idk] = runMeans(X, initial_centroids, max_iters, true);
+[centroids, idk] = runkMeans(X, initial_centroids, max_iters, true);
 fprintf('\nK-Means Done.\n\n');
 
 fprintf('Program paused. Press enter to continue.\n');
