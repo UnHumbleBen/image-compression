@@ -1,4 +1,4 @@
-function plotProgresskMeans(X, centroids, previous, idk, K, i)
+function plotProgresskMeans(X, centroids, previous, idx, K, i)
 %PLOTPROGRESSKMEANS is a helper function that dipslays the progress of
 %k-MEans as it is running. It is intended for use only with 2D data.
 %   PLOTPROGRESSKMEANS(X, centroids, previous, idx, K, i) plots the data
