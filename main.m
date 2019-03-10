@@ -5,7 +5,7 @@ clear; close all; clc
 fprintf('Finding closest centroids. \n\n');
 
 % Load an example dataset  X
-load('ex7data2.mat');
+load('exampleData.mat');
 
 % Select an intial set of centroids
 K = 3; % 3 Centroids
