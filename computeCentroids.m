@@ -15,4 +15,9 @@ function centroids = computeCentroids(X, idx, K)
 % Initialize return value
 centroids = zeros(K, n);
 
+% Loop over the centroids
+for k = 1:K
+    centroids(k) = meanCentroid(X, idx);
+endfor
+
 end
