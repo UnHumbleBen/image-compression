@@ -17,7 +17,7 @@ centroids = zeros(K, n);
 
 % Loop over the centroids
 for k = 1:K
-    centroids(k) = meanCentroid(X, idx);
+    centroids(k) = meanCentroid(X, idx, k);
 endfor
 
 end
