@@ -28,7 +28,7 @@ end
 [m n] = size(X);
 K = size(initial_centroids, 1);
 centroids = initial_centroids;
-previous_centroids = centriods;
+previous_centroids = centroids;
 idx = zeros(m, 1);
 
 % Run K-Means
