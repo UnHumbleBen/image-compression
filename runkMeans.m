@@ -51,6 +51,9 @@ for i=1:max_iters
         pause;
     end
 
+    % Given the memberships, compute new centroids
+    centroids = computeCentroids(X, idx, K);
+
 end
 
 end
