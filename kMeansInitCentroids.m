@@ -10,4 +10,7 @@ centroids = zeros(K, size(X, 2)); %size(X, 2) is n, the number of features
 %Randomly reorders the indinces of the examples
 randidx = randperm(size(X, 1));
 
+%Take the first K examples as centroids
+centroids = randidx(1:K, :);
+
 end
