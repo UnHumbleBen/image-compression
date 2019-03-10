@@ -36,4 +36,3 @@ fprintf('   [ 7.119387 3.616684 ]\n\n');
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
-
