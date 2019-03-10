@@ -10,4 +10,18 @@ function plotProgresskMeans(X, centroids, previous, idk, K, i)
 % Plot the examples
 plotDataPoints(X, idx, K);
 
+% Plot the centroids as black x's
+% plot the centroid x-coord (centroids(:,1) on x-axis
+% plot the centroid y-coord (centroids(:,2) on y-axis
+% 'x' specifies the cross marker
+% 'MarkerEdgeColor' specifies the edge color of the market
+% 'k' specifies black
+% 'MarkerSize' specifies the size of the marker
+% 10 specifies size of market to 10
+% 'LineWidth specifies the width of the stem
+% 3 specifies the LineWidth
+plot(centroids(:,1), centroids(:,2), 'x', ...
+     'MarkerEdgeColor', 'k', ...
+     'MarkerSize', 10, 'LineWidth', 3);
+
 end
