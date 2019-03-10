@@ -24,4 +24,16 @@ pause;
 
 %% Compute Means
 fprintf('\nComputing centroids means.\n\n');
+% Compute means based on closest centroids found previously
 centroids = computeCentroids(X, idx, K);
+
+fprintf('Centroids computed after initial findings of closest centroids: \n')
+fprintf(' %f %f \n', centroids');
+fprintf('\n(the centroids should be\n');
+fprintf('   [ 2.428301 3.157924 ]\n');
+fprintf('   [ 5.813503 2.633656 ]\n');
+fprintf('   [ 7.119387 3.616684 ]\n\n');
+
+fprintf('Program paused. Press enter to continue.\n');
+pause;
+
