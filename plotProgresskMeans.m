@@ -7,6 +7,7 @@ function plotProgresskMeans(X, centroids, previous, idk, K, i)
 %   current locations of the centroids.
 %
 
-
+% Plot the examples
+plotDataPoints(X, idx, K);
 
 end
