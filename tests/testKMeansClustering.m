@@ -1,3 +1,5 @@
+addpath("../src")
+
 %% Initialization
 clear ; close all; clc
 
@@ -5,7 +7,7 @@ clear ; close all; clc
 fprintf('\nRunning K-Means clustering on example dataset.\n\n');
 
 %Load an example dataset
-load('exampleData.mat');
+load('../data/exampleData.mat');
 
 % Settings for running K-Means
 K = 3;

@@ -1,3 +1,4 @@
+addpath("../src");
 %% Initialization
 clear; close all; clc
 
@@ -5,7 +6,7 @@ clear; close all; clc
 fprintf('Finding closest centroids. \n\n');
 
 % Load an example dataset  X
-load('exampleData.mat');
+load('../data/exampleData.mat');
 
 % Select an intial set of centroids
 K = 3; % 3 Centroids
