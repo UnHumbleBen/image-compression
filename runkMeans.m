@@ -56,4 +56,9 @@ for i=1:max_iters
 
 end
 
+% Hold off if we are plotting progress
+if plot_progress
+    hold off;
+end
+
 end
