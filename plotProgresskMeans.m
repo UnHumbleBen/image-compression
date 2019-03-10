@@ -24,4 +24,12 @@ plot(centroids(:,1), centroids(:,2), 'x', ...
      'MarkerEdgeColor', 'k', ...
      'MarkerSize', 10, 'LineWidth', 3);
 
+% Plot the history of the centroids with lines
+% looping over 1 to K
+for j=1:size(centroids,1)
+    % Draws a line from the current centroid  centroids(j, :)
+    % to previous centroid  previous(j, :)
+    drawLine(centroids(j, :), previous(j, :));
+end
+
 end
