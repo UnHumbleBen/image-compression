@@ -1,5 +1,5 @@
 function [centroids, idx] = runkMeans(X, initial_centroids, ...
-                                      max_iters, plot_progess)
+                                      max_iters, plot_progress)
 
 %RUNKMEANS runs the K-Means algorithm on data matrix X, where each row of X
 %is a single example
