@@ -18,9 +18,9 @@ numIsK = nnz(isK);
 XisK = isK .* X;
 
 %sum up the relevant Xs
-centroid = sum(Xisk, 1);
+centroid = sum(XisK, 1);
 
 %take the average
-centrod /= numIsK;
+centroid /= numIsK;
 
 end
