@@ -13,4 +13,10 @@ randidx = randperm(size(X, 1));
 %Take the first K examples as centroids
 centroids = X(randidx(1:K), :);
 
+%% Image Compression
+fprintf('\nApplying K-Means to compress an image.\n\n');
+
+% Find closest cluster members
+idx = findClosestCentroids(X, centroids);
+
 end
