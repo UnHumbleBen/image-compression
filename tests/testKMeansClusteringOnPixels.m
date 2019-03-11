@@ -27,3 +27,6 @@ X = reshape(A, h * w, 3);
 % Run K-Means algorithm on this data
 K = 16;
 max_iters = 10;
+
+% Randomly initialize the centroids
+initial_centroids = kMeansInitCentroids(X, K);
