@@ -36,3 +36,11 @@ initial_centroids = kMeansInitCentroids(X, K);
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
+
+%% Image Compression
+fprintf('\nApplying K-Means to compress an image.\n\n');
+
+% Find closest cluster members
+idx = findClosestCentroids(X, centroids);
+
+
