@@ -43,4 +43,6 @@ fprintf('\nApplying K-Means to compress an image.\n\n');
 % Find closest cluster members
 idx = findClosestCentroids(X, centroids);
 
-
+% Recover the image from the indicies (idx) by mapping each index to
+% to its centroid value. X_recovered is a m x 3 matrix.
+X_recovered = centroids(idx,:);
