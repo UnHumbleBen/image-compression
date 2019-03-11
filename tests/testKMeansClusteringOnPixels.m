@@ -14,3 +14,12 @@ A = double(imread('../images/bird_small.png'));
 
 % Divide by 255 so that all the values are in the range 0 - 1
 A = A / 255;
+
+% Size of the image [h w 3]
+[h w ~] = size(A);
+
+% Reshape the image into an Nx3 matrix where N = number of pixels.
+% Each row will contain the Red, Green and Blue pixel values
+% This gives the dataset matrix X that we will use K-Means on.
+% X gets a (h * w) by 3 matrix with elements taken from A
+X = reshape(A, h * w, 3);
