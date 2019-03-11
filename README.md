@@ -1,6 +1,12 @@
 # Image Compression
 Implementing the K-means algorithm and using it for image compression.
 
+# Table of Contents
+
+1. [Motivation](#motivation)
+2. [K-means algorithm](#k\-means-algorithm)
+3. [Result](#result)
+
 ## Motivation
 In a straightforward 24-bit color representation of an image, each pixel
 is represented as three 8-bit unsigned integers (ranging from 0 to 255)
