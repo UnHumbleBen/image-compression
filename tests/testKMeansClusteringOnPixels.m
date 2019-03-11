@@ -23,3 +23,7 @@ A = A / 255;
 % This gives the dataset matrix X that we will use K-Means on.
 % X gets a (h * w) by 3 matrix with elements taken from A
 X = reshape(A, h * w, 3);
+
+% Run K-Means algorithm on this data
+K = 16;
+max_iters = 10;
