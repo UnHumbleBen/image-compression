@@ -30,3 +30,9 @@ max_iters = 10;
 
 % Randomly initialize the centroids
 initial_centroids = kMeansInitCentroids(X, K);
+
+% Run K-Means
+[centroids, idx] = runkMeans(X, initial_centroids, max_iters);
+
+fprintf('Program paused. Press enter to continue.\n');
+pause;
