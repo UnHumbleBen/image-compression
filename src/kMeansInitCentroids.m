@@ -11,6 +11,6 @@ centroids = zeros(K, size(X, 2)); %size(X, 2) is n, the number of features
 randidx = randperm(size(X, 1));
 
 %Take the first K examples as centroids
-centroids = randidx(1:K, :);
+centroids = X(randidx(1:K), :);
 
 end
