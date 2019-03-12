@@ -63,7 +63,8 @@ subplot(1, 2, 2);
 % display a scaled version of X_recovered
 imagesc(X_recovered);
 title(sprintf('Compressed, with %d colors.', K));
-
+% save compressed image into compressed_bird_small.png
+imwrite(X_recovered, '../images/compressed_bird_small.png');
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
