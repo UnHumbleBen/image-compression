@@ -24,4 +24,5 @@ the 16 colors that best group the pixels in the 3-dimensional RGB space.
 Once the K-means algorithm is complete, we can use the cluster centroids
 (the 16 colors) to replace the pixels in the orginal image.
 
-
+![alt text](https://raw.githubusercontent.com/unhumbleben/image-compression/master/images/bird_small.png)
+![alt text](https://raw.githubusercontent.com/unhumbleben/image-compression/master/images/compressed_bird_small.png)
