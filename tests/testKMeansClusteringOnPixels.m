@@ -54,5 +54,16 @@ X_recovered = reshape(X_recovered, h, w, 3);
 % with one row and two columns
 % drawing image into index 1 (left)
 subplot(1, 2, 1);
-image(A);
+% display a scaled version of A
+imagesc(A);
 title('Original');
+
+% Display compressed image side by side
+subplot(1, 2, 2);
+% display a scaled version of X_recovered
+imagesc(X_recovered);
+title(sprintf('Compressed, with %d colors.', K));
+
+
+fprintf('Program paused. Press enter to continue.\n');
+pause;
