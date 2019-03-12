@@ -46,3 +46,6 @@ idx = findClosestCentroids(X, centroids);
 % Recover the image from the indicies (idx) by mapping each index to
 % to its centroid value. X_recovered is a m x 3 matrix.
 X_recovered = centroids(idx,:);
+
+% Reshape X_recoved to a [h x w x 3] matrix
+X_recovered = reshape(X_recovered, h, w, 3);
